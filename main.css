@@ -1,0 +1,392 @@
+:root {
+    --oscuro: #1F3E72;
+    --secundario: #2C4CCA;
+}
+
+* {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--oscuro);
+    font-family: 'Fredoka One', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.centrar-v {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.row,
+.container-fluid,
+.col-sm-12,
+.col-md-6,
+.col-6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* NAVBAR*/
+
+.navbar-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.nav-item {
+    margin: 0px 20px;
+}
+
+.navbar-color {
+    background: linear-gradient(to right, white 0%, white 50%, var(--bs-nav-right) 50%, var(--bs-nav-right) 100%);
+}
+
+.btn-azul {
+    color: #fff;
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-azul-secundario {
+    color: var(--secundario);
+    background-color: var(--bs-nav-right);
+    border-color: var(--bs-nav-right);
+}
+
+.btn-azul-secundario:hover {
+    color: white;
+    background-color: var(--secundario);
+    border-color: var(--secundario);
+}
+
+.titulo {
+    color: var(--secundario);
+    font: bold;
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.sin-margen {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CONTENEDORES */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    align-items: end;
+    padding: 10px;
+}
+
+.contenedor-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    align-items: end;
+    padding: 10px;
+}
+
+.contenedor-col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.contenedor-col-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: end;
+}
+
+@media (min-width: 768px) {
+    .contenedor-col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: end;
+    }
+    .contenedor-col-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: end;
+    }
+}
+
+.pad-top {
+    padding-top: 100px;
+}
+
+.pad-left {
+    padding-left: 50px;
+}
+
+
+/* INFORMACION PRINCIPAL */
+
+.div-imagen1 {
+    height: 700px;
+    overflow: hidden;
+}
+
+.informacion {
+    padding: 90px;
+}
+
+.informacion-text {
+    width: 90%;
+}
+
+@media (min-width: 800px) {
+    .informacion-central {
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 30px 10px 30px 10px;
+        position: absolute;
+        bottom: 30px;
+        width: 75%;
+        left: 100px;
+    }
+    .informacion-text {
+        width: 45%;
+    }
+}
+
+
+/* VACUNAS */
+
+.vacunas {
+    padding: 50px 50px 0 50px;
+}
+
+.vacunas img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+
+.vacunas img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.img-fluid {
+    width: 70%;
+}
+
+
+/* WHY VACCUNE*/
+
+.why-vaccine {
+    padding: 70px 90px;
+}
+
+.why-vaccine-list {
+    margin: 0 10px;
+}
+
+.icon-box {
+    padding: 50px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--oscuro);
+}
+
+.icon-box .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.icon-box .icon {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.icon-box:hover {
+    transform: scale(1.08);
+}
+
+.icon-box:hover .title a {
+    color: #2487ce;
+}
+
+.icon i {
+    font-size: 20px;
+    color: var(--secundario);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e3f0fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* PREPARATIONS */
+
+.imagen4 {
+    padding: 70px 90px;
+    background: url(./src/imagen4.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    margin-top: 60px;
+}
+
+.info {
+    margin: 40px 5px 5px 0;
+    width: 70%;
+    background: #fff;
+}
+
+.info2 {
+    margin: 0 5px 5px 0;
+    width: 70%;
+    background: #fff;
+}
+
+.info i,
+.info2 i {
+    font-size: 20px;
+    color: var(--secundario);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e3f0fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #124265;
+}
+
+.info2 h5 {
+    padding: 0 0 0 60px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--oscuro);
+}
+
+.info p,
+.info2 p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.info button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin: 0;
+    padding-top: 100px;
+}
+
+footer .row {
+    padding: 50px 90px 0 90px;
+    background-color: var(--bs-nav-right);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--secundario);
+}
+
+.accordion-header,
+.accordion-button {
+    background-color: transparent;
+}
+
+.informacion-central-p {
+    font-size: 1.3rem;
+    padding: 3px;
+    color: var(--secundario);
+    display: inline;
+}
+
+.informacion-central-p i {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bs-nav-right);
+    border-radius: 10px;
+}
+
+.band-amarilla {
+    font-size: 1rem;
+    padding: 3px;
+    color: var(--secundario);
+    display: inline;
+}
+
+.band-amarilla i {
+    width: 20px;
+    height: 20px;
+    color: yellow;
+    background-color: #FFFFE0;
+    border-radius: 10px;
+}
